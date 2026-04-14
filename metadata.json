@@ -1,0 +1,6 @@
+{
+  "name": "Aegis SLM Forge",
+  "description": "A high-performance Small Language Model (SLM) dashboard for advanced coding, bot development, and white-hat security auditing. Supports local deployment via Termux and cloud-based GPU environments.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["AI Code Generation", "Security Auditing", "Local/Cloud Hybrid Deployment"]
+}
