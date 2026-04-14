@@ -2,9 +2,10 @@ import React from 'react';
 import SelectionScreen from './components/SelectionScreen';
 import LocalMode from './components/LocalMode';
 import CloudMode from './components/CloudMode';
+import SetupGuide from './components/SetupGuide';
 import { AnimatePresence, motion } from 'motion/react';
 
-type AppMode = 'selection' | 'local' | 'cloud';
+type AppMode = 'selection' | 'local' | 'cloud' | 'setup';
 
 export default function App() {
   const [mode, setMode] = React.useState<AppMode>('selection');
@@ -45,6 +46,18 @@ export default function App() {
             transition={{ duration: 0.4 }}
           >
             <CloudMode onBack={() => setMode('selection')} />
+          </motion.div>
+        )}
+
+        {mode === 'setup' && (
+          <motion.div
+            key="setup"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -50 }}
+            transition={{ duration: 0.4 }}
+          >
+            <SetupGuide onBack={() => setMode('selection')} />
           </motion.div>
         )}
       </AnimatePresence>
