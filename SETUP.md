@@ -12,10 +12,21 @@ This guide provides instructions on how to set up and run the Aegis SLM Forge en
 
 1.  **Clone the Repository**:
     Open your terminal and run:
-    ```bash
-    git clone <your-repo-url>
-    cd aegis-slm-forge
-    ```
+    *   **Bash/Zsh**:
+        ```bash
+        git clone <your-repo-url>
+        cd aegis-slm-forge
+        ```
+    *   **Windows PowerShell**:
+        ```powershell
+        git clone <your-repo-url>
+        cd aegis-slm-forge
+        ```
+    *   **Windows CMD**:
+        ```cmd
+        git clone <your-repo-url>
+        cd aegis-slm-forge
+        ```
 
 2.  **Install Dependencies**:
     Run the following command to install all required npm packages:
@@ -25,9 +36,18 @@ This guide provides instructions on how to set up and run the Aegis SLM Forge en
 
 3.  **Environment Configuration**:
     *   Copy the `.env.example` file to a new file named `.env`:
-        ```bash
-        cp .env.example .env
-        ```
+        *   **Bash/Zsh**:
+            ```bash
+            cp .env.example .env
+            ```
+        *   **Windows PowerShell**:
+            ```powershell
+            copy .env.example .env
+            ```
+        *   **Windows CMD**:
+            ```cmd
+            copy .env.example .env
+            ```
     *   Open the `.env` file in VS Code and add your **GEMINI_API_KEY**. You can get one from the [Google AI Studio](https://aistudio.google.com/).
 
 4.  **Run the Development Server**:
